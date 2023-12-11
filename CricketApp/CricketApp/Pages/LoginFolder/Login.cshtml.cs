@@ -35,7 +35,7 @@ public class LoginModel : PageModel
         {
             if (Username == "IAmRajababu")
             {
-                return RedirectToPage("/Admin/Index"); // Redirect to admin dashboard
+                return RedirectToPage("/Admin/AdminDashboard"); // Redirect to admin dashboard
             }
             else
             {
