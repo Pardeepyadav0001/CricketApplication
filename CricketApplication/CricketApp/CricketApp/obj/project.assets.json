@@ -3290,11 +3290,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pardeepy\\source\\repos\\CricketApplication\\CricketApp\\CricketApp\\CricketApp.csproj",
+      "projectUniqueName": "C:\\Users\\pardeepy\\source\\repos\\CricketApp Final\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\CricketApp.csproj",
       "projectName": "CricketApp",
-      "projectPath": "C:\\Users\\pardeepy\\source\\repos\\CricketApplication\\CricketApp\\CricketApp\\CricketApp.csproj",
+      "projectPath": "C:\\Users\\pardeepy\\source\\repos\\CricketApp Final\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\CricketApp.csproj",
       "packagesPath": "C:\\Users\\pardeepy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pardeepy\\source\\repos\\CricketApplication\\CricketApp\\CricketApp\\obj\\",
+      "outputPath": "C:\\Users\\pardeepy\\source\\repos\\CricketApp Final\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pardeepy\\AppData\\Roaming\\NuGet\\NuGet.Config",
