@@ -379,7 +379,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/7.0.0": {
+      "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -645,8 +645,12 @@
           }
         }
       },
-      "MySqlConnector/2.2.5": {
+      "MySqlConnector/2.3.2": {
         "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
+          "System.Diagnostics.DiagnosticSource": "7.0.2"
+        },
         "compile": {
           "lib/net6.0/MySqlConnector.dll": {
             "related": ".xml"
@@ -1677,10 +1681,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/7.0.0": {
-      "sha512": "kmn78+LPVMOWeITUjIlfxUPDsI0R6G0RkeAMBmQxAJ7vBJn4q2dTva7pWi65ceN5vPGjJ9q/Uae2WKgvfktJAw==",
+    "Microsoft.Extensions.Logging.Abstractions/7.0.1": {
+      "sha512": "pkeBFx0vqMW/A3aUVHh7MPu3WkBhaVlezhSZeb1c9XD0vUReYH1TLFSy5MxJgZfmz5LZzYoErMorlYZiwpOoNA==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/7.0.0",
+      "path": "microsoft.extensions.logging.abstractions/7.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1742,7 +1746,7 @@
         "lib/net7.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2075,30 +2079,32 @@
         "runtimes/win-x64/native/krbcc64.dll"
       ]
     },
-    "MySqlConnector/2.2.5": {
-      "sha512": "6sinY78RvryhHwpup3awdjYO7d5hhWahb5p/1VDODJhSxJggV/sBbYuKK5IQF9TuzXABiddqUbmRfM884tqA3Q==",
+    "MySqlConnector/2.3.2": {
+      "sha512": "2aoHW37aGi0K2xZkk6XBLJOxsP8ew2PJhCddSqjsIqED/UJuQXBX5ofkwHNzAmQgHpVGzKz2E5QPeFMLUCCCpw==",
       "type": "package",
-      "path": "mysqlconnector/2.2.5",
+      "path": "mysqlconnector/2.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "lib/net461/MySqlConnector.dll",
-        "lib/net461/MySqlConnector.xml",
+        "lib/net462/MySqlConnector.dll",
+        "lib/net462/MySqlConnector.xml",
         "lib/net471/MySqlConnector.dll",
         "lib/net471/MySqlConnector.xml",
+        "lib/net48/MySqlConnector.dll",
+        "lib/net48/MySqlConnector.xml",
         "lib/net6.0/MySqlConnector.dll",
         "lib/net6.0/MySqlConnector.xml",
         "lib/net7.0/MySqlConnector.dll",
         "lib/net7.0/MySqlConnector.xml",
-        "lib/netcoreapp3.1/MySqlConnector.dll",
-        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/net8.0/MySqlConnector.dll",
+        "lib/net8.0/MySqlConnector.xml",
         "lib/netstandard2.0/MySqlConnector.dll",
         "lib/netstandard2.0/MySqlConnector.xml",
         "lib/netstandard2.1/MySqlConnector.dll",
         "lib/netstandard2.1/MySqlConnector.xml",
         "logo.png",
-        "mysqlconnector.2.2.5.nupkg.sha512",
+        "mysqlconnector.2.3.2.nupkg.sha512",
         "mysqlconnector.nuspec"
       ]
     },
@@ -3281,6 +3287,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
       "MySql.Data >= 8.2.0",
+      "MySqlConnector >= 2.3.2",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
     ]
   },
@@ -3290,11 +3297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pardeepy\\source\\repos\\CricketApp Final\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\CricketApp.csproj",
+      "projectUniqueName": "D:\\Aspnet Projects\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\CricketApp.csproj",
       "projectName": "CricketApp",
-      "projectPath": "C:\\Users\\pardeepy\\source\\repos\\CricketApp Final\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\CricketApp.csproj",
+      "projectPath": "D:\\Aspnet Projects\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\CricketApp.csproj",
       "packagesPath": "C:\\Users\\pardeepy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pardeepy\\source\\repos\\CricketApp Final\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\obj\\",
+      "outputPath": "D:\\Aspnet Projects\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pardeepy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3340,6 +3347,10 @@
           "MySql.Data": {
             "target": "Package",
             "version": "[8.2.0, )"
+          },
+          "MySqlConnector": {
+            "target": "Package",
+            "version": "[2.3.2, )"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",

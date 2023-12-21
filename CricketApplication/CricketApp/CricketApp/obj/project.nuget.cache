@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xv1g9OciwgfeNKEW2CsmO+/4iIsOn/78p0jZ3E6dB6ZUOFWFBqJ0mqNRCx0xf0xLh9m7Sh8u0uinH25H+jIC8Q==",
+  "dgSpecHash": "WJk7fYlwsRzmr+b1yflUQ6AQNqXT4fDOTARe3ktvf+owrCOfIreO/xj6y3K5gWNx8VCEkKbEpSm/DLLrDHBvyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pardeepy\\source\\repos\\CricketApp Final\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\CricketApp.csproj",
+  "projectFilePath": "D:\\Aspnet Projects\\CricketApplication\\CricketApplication\\CricketApp\\CricketApp\\CricketApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pardeepy\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
@@ -26,7 +26,7 @@
     "C:\\Users\\pardeepy\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
-    "C:\\Users\\pardeepy\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\pardeepy\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\microsoft.identity.client\\4.21.1\\microsoft.identity.client.4.21.1.nupkg.sha512",
@@ -40,7 +40,7 @@
     "C:\\Users\\pardeepy\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\mysql.data\\8.2.0\\mysql.data.8.2.0.nupkg.sha512",
-    "C:\\Users\\pardeepy\\.nuget\\packages\\mysqlconnector\\2.2.5\\mysqlconnector.2.2.5.nupkg.sha512",
+    "C:\\Users\\pardeepy\\.nuget\\packages\\mysqlconnector\\2.3.2\\mysqlconnector.2.3.2.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\7.0.0\\pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\pardeepy\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",

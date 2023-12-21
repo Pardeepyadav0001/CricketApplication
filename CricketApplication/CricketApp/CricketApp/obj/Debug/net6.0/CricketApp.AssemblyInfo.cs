@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CricketApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+299205217a96e167840a670dee599f871e4e99ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("CricketApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CricketApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,19 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Configuration;
+using MySql.Data.MySqlClient;
+using System;
+using System.Data;
 
 namespace CricketApp.Pages.RegisterationFolder
 {
     public class RegisterModel : PageModel
     {
+        private readonly IConfiguration _configuration;
+
+        public RegisterModel(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         [BindProperty]
         public RegisterViewModel Input { get; set; }
 
         public string ErrorMessage { get; set; }
-
-        public void OnGet()
-        {
-            // Handle GET request if needed
-        }
 
         public IActionResult OnPost()
         {
@@ -23,12 +29,50 @@ namespace CricketApp.Pages.RegisterationFolder
                 return Page();
             }
 
-            // TODO: Add logic to save user registration details to the database
-            // For example, you might want to use Entity Framework to interact with the database
+            string connectionString = _configuration.GetConnectionString("MySqlConnection");
 
-            // Redirect to the login page after successful registration
-            return RedirectToPage("/LoginFolder/Login");
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
 
+                    // Check if the username or email already exists (you may want to add unique constraints in the database)
+                    using (MySqlCommand checkCommand = new MySqlCommand("SELECT COUNT(*) FROM registration WHERE Username = @Username OR Email = @Email", connection))
+                    {
+                        checkCommand.Parameters.AddWithValue("@Username", Input.Username);
+                        checkCommand.Parameters.AddWithValue("@Email", Input.Email);
+
+                        int count = Convert.ToInt32(checkCommand.ExecuteScalar());
+
+                        if (count > 0)
+                        {
+                            // Username or email already exists, return with an error
+                            ErrorMessage = "Username or email already exists.";
+                            return Page();
+                        }
+                    }
+
+                    // Insert data into the Users table
+                    using (MySqlCommand command = new MySqlCommand("INSERT INTO registration (Username, Password1, Email) VALUES (@Username, @Password1, @Email)", connection))
+                    {
+                        command.Parameters.AddWithValue("@Username", Input.Username);
+                        command.Parameters.AddWithValue("@Password1", Input.Password);
+                        command.Parameters.AddWithValue("@Email", Input.Email);
+
+                        command.ExecuteNonQuery();
+                    }
+
+                    // Redirect to the login page after successful registration
+                    return RedirectToPage("/LoginFolder/Login");
+                }
+                catch (Exception ex)
+                {
+                    // Handle the exception, log it, or display an error message
+                    ErrorMessage = $"Error: {ex.Message}";
+                    return Page();
+                }
+            }
         }
     }
 
