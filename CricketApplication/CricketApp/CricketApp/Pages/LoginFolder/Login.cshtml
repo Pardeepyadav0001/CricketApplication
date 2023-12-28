@@ -73,9 +73,9 @@
                     const role = data.userRole;
 
                     if (role === 'Admin') {
-                        window.location.href = '/Admin/Index';
+                        window.location.href = '/Admin/AdminDashboard';
                     } else if (role === 'User') {
-                        window.location.href = '/User/Index';
+                        window.location.href = '/User/UserDashboard';
                     } else {
                         // Handle invalid role
                         showMessage('Invalid user role');

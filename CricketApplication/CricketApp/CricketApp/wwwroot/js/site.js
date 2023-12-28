@@ -129,7 +129,7 @@ function registerUser(userData) {
 }
 
 function validateLogin() {
-    const email = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const loginMessage = document.getElementById("loginMessage");
 

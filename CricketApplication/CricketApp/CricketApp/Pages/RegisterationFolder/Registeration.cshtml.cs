@@ -54,10 +54,10 @@ namespace CricketApp.Pages.RegisterationFolder
                     }
 
                     // Insert data into the Users table
-                    using (MySqlCommand command = new MySqlCommand("INSERT INTO registration (Username, Password1, Email) VALUES (@Username, @Password1, @Email)", connection))
+                    using (MySqlCommand command = new MySqlCommand("INSERT INTO registration (Username, Password, Email) VALUES (@Username, @Password, @Email)", connection))
                     {
                         command.Parameters.AddWithValue("@Username", Input.Username);
-                        command.Parameters.AddWithValue("@Password1", Input.Password);
+                        command.Parameters.AddWithValue("@Password", Input.Password);
                         command.Parameters.AddWithValue("@Email", Input.Email);
 
                         command.ExecuteNonQuery();

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+//using YourProjectName.Repositories; // Adjust this based on your project's structure
 
 public class LoginModel : PageModel
 {
@@ -17,9 +18,10 @@ public class LoginModel : PageModel
         _logger = logger;
     }
 
-    public void OnGet()
+    public IActionResult OnGet()
     {
         // Handle GET requests
+        return Page();
     }
 
     public IActionResult OnPost()
@@ -29,17 +31,26 @@ public class LoginModel : PageModel
             return Page();
         }
 
-        bool isValidLogin = IsValidLogin(Username, Password);
+        // Use UserRepository for authentication
+        bool isValidLogin = UserRepository.ValidateCredentials(Username, Password);
 
         if (isValidLogin)
         {
-            if (Username == "IAmRajababu")
+            // Use UserRepository to get user role
+            string role = UserRepository.GetUserRole(Username);
+
+            if (role == "Admin")
             {
-                return RedirectToPage("/Admin/AdminDashboard"); // Redirect to admin dashboard
+                return RedirectToPage("/Admin/AdminDashboard");
+            }
+            else if (role == "User")
+            {
+                return RedirectToPage("/User/UserDashboard");
             }
             else
             {
-                return RedirectToPage("/User/Index"); // Redirect to user dashboard
+                ViewData["ErrorMessage"] = "Invalid user role";
+                _logger.LogWarning($"Invalid role for username: {Username}");
             }
         }
         else
@@ -49,15 +60,5 @@ public class LoginModel : PageModel
         }
 
         return Page();
-    }
-
-    private bool IsValidLogin(string username, string password)
-    {
-        // Implement your authentication logic here
-        // For example, check against a database or external service
-        // DO NOT store passwords in plain text in production code
-
-        // Example: Check for a predefined username and password
-        return username == "IAmRajababu" && password == "MyPassword";
     }
 }
