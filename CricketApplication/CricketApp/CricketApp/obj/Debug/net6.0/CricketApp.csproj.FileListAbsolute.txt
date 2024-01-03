@@ -329,3 +329,10 @@ D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\o
 D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\obj\Debug\net6.0\CricketApp.pdb
 D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\obj\Debug\net6.0\CricketApp.genruntimeconfig.cache
 D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\obj\Debug\net6.0\ref\CricketApp.dll
+D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\bin\Debug\net6.0\NuGet.Common.dll
+D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\bin\Debug\net6.0\NuGet.Frameworks.dll
+D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\bin\Debug\net6.0\NuGet.Packaging.dll
+D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\bin\Debug\net6.0\NuGet.Packaging.Core.dll
+D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\bin\Debug\net6.0\NuGet.Packaging.Core.Types.dll
+D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\bin\Debug\net6.0\NuGet.Repositories.dll
+D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\bin\Debug\net6.0\NuGet.Versioning.dll

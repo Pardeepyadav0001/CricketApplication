@@ -55,7 +55,13 @@ public class LoginModel : PageModel
         }
         else
         {
-            ViewData["ErrorMessage"] = "Invalid username or password.";
+            bool isValidUserLogin = UserRepository.ValidateUserCredentials(Username, Password);
+
+            if(isValidUserLogin)
+            {
+                return RedirectToPage("/User/UserDashboard");
+            }
+             ViewData["ErrorMessage"] = "Invalid username or password.";
             _logger.LogWarning($"Failed login attempt for username: {Username}");
         }
 

@@ -56,20 +56,22 @@ function validateRegistration() {
     }
 
     // Email validation
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+<span class="math-inline">/\.test\(email\.value\) \) \{
-        messageEl\.textContent \= 'Please enter a valid email address\.';
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
+        messageEl.textContent = 'Please enter a valid email address.';
+
 setDynamicColor\(messageEl, "\#dc3545"\);
         toggleAnimation\(messageEl, ERROR\_ANIMATION\_CLASS\);
         return false;
-        \
+        
     }
     // Password validation
-    if \(\!/^\(?\=\.\*\\d\)\(?\=\.\*\[a\-z\]\)\(?\=\.\*\[A\-Z\]\)\.\{8,\}</span > /.test(password.value)) {
-    messageEl.textContent = 'Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.';
-    setDynamicColor(messageEl, "#dc3545");
-    toggleAnimation(messageEl, ERROR_ANIMATION_CLASS);
-    return false;
-}
+    if (!/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(password.value)) {
+        messageEl.textContent = 'Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, and one number.';
+        setDynamicColor(messageEl, "#dc3545");
+        toggleAnimation(messageEl, ERROR_ANIMATION_CLASS);
+        return false;
+    }
+
 
 // Confirm password validation
 if (confirmPassword.value !== password.value) {
@@ -98,6 +100,8 @@ return true;
 }
 
 function registerUser(userData) {
+    const messageEl = document.getElementById('registrationMessage');
+
     // Replace "YOUR_API_ENDPOINT" with your actual API endpoint
     fetch('YOUR_API_ENDPOINT/register', {
         method: 'POST',
@@ -136,4 +140,41 @@ function validateLogin() {
     // Email format validation
     if (!isValidEmail(email)) {
         loginMessage.innerText = "Please enter a valid email address.";
-        setDynamicColor(loginMessage, "#dc3545
+        setDynamicColor(loginMessage, "#dc3545");
+        return false;
+    }
+
+    // Password validation logic (if needed)
+
+    // Send login data to the server
+    loginRequest({
+        email: email,
+        password: password
+    });
+
+    return true;
+}
+
+function loginRequest(credentials) {
+    // Replace "YOUR_API_ENDPOINT" with your actual API endpoint for login
+    fetch('YOUR_API_ENDPOINT/login', {
+        method: 'POST',
+        body: JSON.stringify(credentials),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            // Login successful, handle the response accordingly
+            // For example, redirect to a dashboard page
+            window.location.href = '/dashboard';
+        } else {
+            // Handle login error
+            response.json().then(error => {
+                // Display the error message to the user
+                loginMessage.innerText = error.message;
+                setDynamicColor(loginMessage, "#dc3545");
+            });
+        }
+    });
+}
