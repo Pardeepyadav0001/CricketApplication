@@ -54,6 +54,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVybXNBbmRTZXJ2aWNlUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/UserLogin/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckxvZ2luXFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/Matches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxNYXRjaGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/News.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxOZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/Players.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxQbGF5ZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxTZXR0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/Statistics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxTdGF0aXN0aWNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/UserDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxVc2VyRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
