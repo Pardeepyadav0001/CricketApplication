@@ -1,4 +1,13 @@
 ﻿@page
 @model CricketApp.Pages.User.MatchesModel
-@{
-}
+
+<h2>Upcoming Cricket Matches</h2>
+
+<ul>
+    @foreach (var match in Model.UpcomingMatches)
+    {
+        <li>@match.Teams - @match.Date</li>
+    }
+</ul>
+
+<p><a asp-page="EditMatches">Edit Matches</a></p>

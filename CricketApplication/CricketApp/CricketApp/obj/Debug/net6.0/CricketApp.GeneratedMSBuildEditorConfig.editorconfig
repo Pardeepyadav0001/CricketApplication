@@ -58,6 +58,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckxvZ2luXFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/EditMatches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxFZGl0TWF0Y2hlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/EditStatistics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxFZGl0U3RhdGlzdGljcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/Matches.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxNYXRjaGVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +80,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/Save.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclxTYXZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Aspnet Projects/CricketApplication/CricketApplication/CricketApp/CricketApp/Pages/User/Settings.cshtml]

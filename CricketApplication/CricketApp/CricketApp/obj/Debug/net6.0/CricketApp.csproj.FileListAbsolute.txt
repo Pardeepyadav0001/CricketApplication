@@ -312,7 +312,6 @@ D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\o
 D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\obj\Debug\net6.0\CricketApp.MvcApplicationPartsAssemblyInfo.cache
 D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\obj\Debug\net6.0\CricketApp.RazorAssemblyInfo.cache
 D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\obj\Debug\net6.0\CricketApp.RazorAssemblyInfo.cs
-D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\obj\Debug\net6.0\CricketApp.sourcelink.json
 D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\obj\Debug\net6.0\staticwebassets.build.json
 D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\obj\Debug\net6.0\staticwebassets.development.json
 D:\Aspnet Projects\CricketApplication\CricketApplication\CricketApp\CricketApp\obj\Debug\net6.0\staticwebassets\msbuild.CricketApp.Microsoft.AspNetCore.StaticWebAssets.props

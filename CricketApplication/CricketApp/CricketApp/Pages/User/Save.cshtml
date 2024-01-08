@@ -1,0 +1,16 @@
+﻿@page
+@model CricketApp.Pages.User.SaveModel
+
+<h2>Edit Application Settings</h2>
+
+<form method="post">
+    <label asp-for="ApplicationName">Application Name:</label>
+    <input asp-for="ApplicationName" />
+
+    <label asp-for="MaxPlayers">Maximum Players:</label>
+    <input asp-for="MaxPlayers" />
+
+    <!-- Add more input fields for additional settings -->
+
+    <button type="submit">Save</button>
+</form>

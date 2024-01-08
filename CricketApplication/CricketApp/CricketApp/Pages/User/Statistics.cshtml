@@ -1,4 +1,10 @@
 ﻿@page
 @model CricketApp.Pages.User.StatisticsModel
-@{
-}
+
+<h2>Cricket Statistics</h2>
+
+<p>Number of Matches Played: @Model.TotalMatches</p>
+<p>Total Runs Scored: @Model.TotalRuns</p>
+<!-- Add more display for different statistics -->
+
+<p><a asp-page="EditStatistics">Edit Statistics</a></p>

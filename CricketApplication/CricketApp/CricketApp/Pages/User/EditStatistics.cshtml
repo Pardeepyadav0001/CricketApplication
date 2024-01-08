@@ -1,0 +1,16 @@
+﻿@page
+@model CricketApp.Pages.User.EditStatisticsModel
+
+<h2>Edit Cricket Statistics</h2>
+
+<form method="post">
+    <label asp-for="TotalMatches">Total Matches Played:</label>
+    <input asp-for="TotalMatches" />
+
+    <label asp-for="TotalRuns">Total Runs Scored:</label>
+    <input asp-for="TotalRuns" />
+
+    <!-- Add more input fields for different statistics -->
+
+    <button type="submit">Save</button>
+</form>

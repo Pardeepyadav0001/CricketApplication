@@ -1,4 +1,35 @@
 ﻿@page
 @model CricketApp.Pages.User.ProfileModel
-@{
-}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <!-- Add your CSS styles or include external stylesheets here -->
+</head>
+<body>
+    <h1>User Profile</h1>
+
+    <!-- Include the provided section for the "View Profile" link -->
+    <section id="profile">
+        <!-- Content for the "View Profile" link section goes here -->
+
+
+        <button onclick="redirectUserDashboard()">Back to Dashboard</button>
+
+
+
+    </section>
+
+    <!-- Add your scripts or include external scripts here -->
+
+    <script>
+        function redirectUserDashboard() {
+            // Replace "/User/Profile" with the actual URL or route of your profile page
+            window.location.href = "/User/UserDashboard";
+        }
+    </script>
+
+
+</body>
+</html>

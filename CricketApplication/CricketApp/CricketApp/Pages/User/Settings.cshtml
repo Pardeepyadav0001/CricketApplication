@@ -1,4 +1,15 @@
 ﻿@page
 @model CricketApp.Pages.User.SettingsModel
-@{
-}
+
+<h2>Application Settings</h2>
+
+<dl>
+    <dt>Application Name:</dt>
+    <dd>@Model.ApplicationName</dd>
+
+    <dt>Maximum Players:</dt>
+    <dd>@Model.MaxPlayers</dd>
+    <!-- Add more settings as needed -->
+</dl>
+
+<p><a asp-page="Save">Edit Settings</a></p>
